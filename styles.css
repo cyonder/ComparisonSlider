@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+}
+.slider-container{
+  width: 450px;
+  height: 253px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.slider-control{
+  z-index: 3;
+  width: 6px;
+  height: 100%;
+  background: #FFFFFF;
+  opacity: .4;
+  cursor: ew-resize;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.slider-before{
+  z-index: 2;
+  background-image: url("./mojave-day.jpg");
+  width: 50%;
+}
+.slider-after{
+  z-index: 1;
+  background-image: url("./mojave-night.jpg");
+  background-position: right;
+  width: 100%;
+  right: 0;
+}
+.slider-before, .slider-after{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+}
